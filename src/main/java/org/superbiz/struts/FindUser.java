@@ -17,17 +17,12 @@
  */
 package org.superbiz.struts;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import javax.naming.Context;
-import javax.naming.InitialContext;
-import java.util.Properties;
 
 @Component
 public class FindUser {
 
-    private int id;
+    private long id;
     private String errorMessage;
     private User user;
     private UserService userService;
@@ -52,7 +47,7 @@ public class FindUser {
         this.errorMessage = errorMessage;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
